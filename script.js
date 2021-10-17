@@ -19,7 +19,7 @@ function displayActualWeather(data){
     document.querySelector('.progress-bar').style.width = humidity + "%";
     document.querySelector('.visibility').innerText = visibility + " miles";
     document.querySelector('.pressure').innerText = pressure + " mb";
-    document.querySelector('.actual-img').src='./img/'+icon+'.png';
+    document.querySelector('.actual-img').src='img/'+icon+'.png';
 }
 
 function fetchForcastWeather (lat,lon){
@@ -42,7 +42,7 @@ function displayForcastWeather(data){
         document.querySelector(ite_min).innerText = 'Min: ' + temp_min+'°';
         document.querySelector(ite_max).innerText = 'Max: ' + temp_max+'°';
         document.querySelector(ite_day).innerText = date_pre;
-        document.querySelector(ite_img).src='./img/'+ icon +'.png';
+        document.querySelector(ite_img).src='img/'+ icon +'.png';
     }
 }
 
